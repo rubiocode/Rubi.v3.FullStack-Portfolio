@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Software Developer</title>
+    <!--Favicon-->
+    
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
+    <!--fontawesome-->
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <!--Fixed Navbar and img1 background image-->
+    <div class="pimg1" id="home">
+        <header class="uk-nav-header" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <div class="uk-position-relative">
+                <div class="uk-position-top">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+                                <li class=" uk-active uk-nav-item"><a href="#home">Home</a></li>
+                                <li class="uk-nav-item"><a href="#aboutme">About Me</a></li>
+                                <li class="uk-nav-item"><a href="#projects">Projects</a></li>
+                                <li class="uk-nav-item"><a href="#contactme">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="uk-position-top">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-nav-item item" uk-tooltip="title: GitHub Profile"><a href="https://github.com/rubiocode"><span uk-icon="icon: github-alt; ratio:2"></span></a></li>
+                                <li class="uk-nav-item item" uk-tooltip="title: Linkedin Profile"><a href="https://www.linkedin.com/in/rubidia-rubio-in/"><span uk-icon="icon: linkedin; ratio:2"></span></a></li>
+                                <li class="uk-nav-item item" uk-tooltip="title: Resume"><a href="/img/RubioResume.pdf"><span uk-icon="icon: file-pdf; ratio:2"></span></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="ptext">
+            <span class="border txt-type" data-wait="2000" data-words='["Hello, I&#39;m Rubi."]'>
+            </span>
+        </div>
+    </div>
+
+    <!--About me section-->
+    <section class="section section-light" id="aboutme">
+        <h2>About Me</h2>
+        <img id="imgs" alt="Rubi" uk-img data-src="/img/Rubi.png">
+        <div class="uk-flex">
+            <img class="img" alt="Rubi" uk-img data-src="/img/Rubi.png">
+            <p class="aboutmetext">
+                I'm a fullstack software developer student at <a class="uk-text-bold uk-text-secondary" href="https://bootcamp.du.edu/coding/"
+                    title="Go to University of Denver webpage">University of Denver</a> with years of experience in
+                healthcare; working in healthcare has provided me with valuable skills needed in web development. Skills
+                such as critical thinking, multitasking, attention to detail, and effective communication skills to name
+                a few. I am a fast learner and hardworking student! I'm ready for my career in technology and I cannot
+                wait to see where this path will take me!
+            </p>
+        </div>
+    </section>
+
+    <!--Projects section and img2 background image-->
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="border trans">
+                Projects
+            </span>
+        </div>
+    </div>
+    <section class="section section-dark" id="projects">
+        <h2 id="proText">Projects</h2>
+        <p>
+            I strive to provide dynamic and visually pleasing applications. I truly enjoy the creativity behind each
+            project and the learning involved along the process.
+        </p>
+        <!--Filter Projects-->
+        <div uk-filter="target: .js-filter">
+
+            <ul class="uk-subnav uk-subnav-pill">
+                <li uk-filter-control=".tag-HTML"><a href="#">HTML | CSS</a></li>
+                <li uk-filter-control=".tag-JS"><a href="#">JS | JQuery</a></li>
+                <li uk-filter-control=".tag-Frameworks"><a href="#">CSS Frameworks</a></li>
+                <li uk-filter-control=".tag-Node"><a href="#">Node | Express | TDD | APIs</a></li>
+                <li uk-filter-control=".tag-MySQL"><a href="#">MySQL | Handlebars</a></li>
+                <li uk-filter-control=".tag-all"><a href="#">All</a></li>
+            </ul>
+
+            <!--Projects-->
+            <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center uk-height-match" uk-grid>
+
+                <!--Project 1-->
+                <li class="tag-HTML tag-JS tag-Frameworks tag-Node tag-all">
+                    <div class="uk-card-title uk-inline">Make My Day</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="Make My Day App" uk-img data-src="/img/Project1.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            This version of Make My Day App showcases my personal style and layout of the homepage. This
+                            app presents the user with an uplifting gallery of foxy images, quotes, and gifs.
+                            <br></br>
+                            Built with: HTML | CSS | JavaScript | JQuery | JSON | AJAX | MDBootstrap | CSS Gradient IO |
+                            Third Party APIs
+                            <br></br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://rubiocode.github.io/Make_My_Day/index.html">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/rubiocode/Make_My_Day">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+
+                <!--Project 2-->
+                <li class="tag-HTML tag-JS tags-Frameworks tag-Node tag-MySQL tag-all">
+                    <div class="uk-card-title uk-inline">The 4th Kind</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="Make My Day App" uk-img data-src="/img/ufo.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            The UFO application implements the MVC paradigm structure and uses Handlebars.js as a
+                            template to render pages. In addition, the application uses Express-Session npm package to
+                            authenticate the user's email and password as well as Bcrypt package to hash passwords.
+                            <br></br>
+                            Built with: HTML | CSS | JavaScript | Node | Restful APIs | Express | MySQL | Handlebars |
+                            UIKit
+                            <br></br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://the-4th-kind.herokuapp.com/">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/uglyb0nes/4thKind">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+
+                <!--Project 3-->
+                <li class="tag-HTML tag-JS tags-Frameworks tag-Node tag-MySQL tag-all">
+                    <div class="uk-card-title uk-inline">Technically Speaking Blog</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="Make My Day App" uk-img data-src="/img/blog.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            This application implements the MVC paradigm structure and uses Handlebars.js as a template
+                            to render pages. In addition, the application uses Express-Session npm package to
+                            authenticate the user's email and password as well as Bcrypt package to hash passwords.
+                            <br></br>
+                            Built with: HTML | CSS | JavaScript | Node | Restful APIs | Express | MySQL | Handlebars |
+                            UIKit
+                            <br></br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://stark-wave-96695.herokuapp.com/">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/rubiocode/Technically-Speaking">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+
+                <!--Project 4-->
+                <li class="tag-HTML tag-JS tag-Frameworks tag-all">
+                    <div class="uk-card-title uk-inline">Portfolio v2.0</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="porfolio v2" uk-img data-src="/img/portfolio.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            This is the lastest version of my web developer portfolio showcasing a more modern,
+                            interactive, and responsive design.
+                            <br></br>
+                            Built with: HTML | CSS | JavaScript | Bulma
+                            <br></br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://rubiocode.github.io/Make_My_Day/index.html">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/rubiocode/Make_My_Day">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+
+                <!--Project 5-->
+                <li class="tag-HTML tag-JS tag-Frameworks tag-Node tag-all">
+                    <div class="uk-card-title uk-inline">Weather Dashboard</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="Make My Day App" uk-img data-src="/img/weather.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            This is a simple and easy to use application to check the local weather. It displays
+                            UV-index, current weather, five day forecast, and also saves previous city entries for easy
+                            access.
+                            <br></br>
+                            Built with: HTML | CSS | JavaScript | JQuery | JSON | MDBootstrap | Server Side APIs
+                            <br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://rubiocode.github.io/Weather-Dashboard/">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/rubiocode/Weather-Dashboard">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+
+                <!--Project 6-->
+                <li class="tag-HTML tag-JS tag-all">
+                    <div class="uk-card-title uk-inline">Password Generator</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="Make My Day App" uk-img data-src="/img/password.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            This application generates a randomized password based on certain password criteria. In
+                            addition, the application presents the user with the option to save or reset the generated
+                            password.
+                            Built with: HTML | CSS | JavaScript
+                            <br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://rubiocode.github.io/Password-Generator/index.HTML">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/rubiocode/Password-Generator">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+
+                <!--Project 6-->
+                <li class="tag-JS tags-Frameworks tag-Node tag-MySQL tag-all">
+                    <div class="uk-card-title uk-inline">Team Profile Generator</div>
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body card">
+                        <img alt="Make My Day App" uk-img data-src="/img/team.png">
+                        <p class="uk-overlay uk-overlay-default uk-position-bottom">
+                            This is a command line application which will prompt the user for information about their
+                            team and generate a nicely formatted and responsive HTML page displaying a roster of all
+                            their team members.
+                            Built with: HTML | CSS | JavaScript | Node
+                            <br>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://rubiocode.github.io/Team-Profile-Generator/Develop/output/team.html">Webpage</a></button>
+                            <button class="uk-button uk-button-default uk-button-small"><a
+                                    href="https://github.com/rubiocode/Team-Profile-Generator">Repository</a></button>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Contact me section and img3 background image-->
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border trans">
+                Contact Me
+            </span>
+        </div>
+    </div>
+    <section class="section section-light">
+        <h2>Contact Me</h2>
+
+        <!--Contact me links-->
+        <div class="uk-container uk-inline container">
+            <div class="uk-text-left contactInfo" id="contactme">
+                <div class="box">
+                    <div class="icon"><a class="uk-link-text"
+                            href="https://github.com/rubiocode"><span uk-icon="icon:  github-alt; ratio: 3"></a></span></div>
+                    <div class="text">
+                        <h3>GitHub</h3>
+                        <p class="contacttext">https://github.com/rubiocode</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><a class="uk-link-text"
+                            href="https://www.linkedin.com/in/rubidia-rubio-a42614210/"><span uk-icon="icon:   linkedin; ratio: 3"></span></a></div>
+                    <div class="text">
+                        <h3>Linkedin</h3>
+                        <p class="contacttext">https://www.linkedin.com/in/rubidia-rubio-in/</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><a class="uk-link-text" href="mailto:w.rubidia.rubio@gmail.com"> <span uk-icon="icon: mail; ratio: 3"></span></a>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p class="contacttext">w.rubidia.rubio@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><a class="uk-link-text" href="/img/RubioResume.pdf"><span uk-icon="icon: file-pdf; ratio:3"></span></a>
+                    </div>
+                    <div class="text">
+                        <h3>Resume</h3>
+                    </div>
+                </div>
+            </div>
+            <!--Contact Me submit form/message-->
+            <div class="uk-form uk-inline contactForm form-container">
+                <form class="contact-form">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required id="fullName">
+                        <span>Full Name</span>
+                        <div class="inputBox">
+                            <input type="text" name="" required id="email">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="test" name="" required id="subject">
+                            <span>Subject</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required id="message" maxlength="500" cols="30" rows="10"></textarea>
+                            <span>Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" class="submit" required="send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section and img1 background image-->
+    <div class="pimg1">
+    </div>
+    <footer class="section section-dark">
+        <a href="#" uk-totop uk-scroll></a>
+        <p>
+            <strong>@rubiocode. Fullstack Sofware Developer </strong> | Created with <i
+                class="fas fa-heart uk-link-text -uk-text-muted"></i> by <a class="uk-link-text uk-link-muted"
+                href="https://github.com/rubiocode">Rubidia Rubio</a> | made
+            with <a class="uk-link-text uk-link-muted uk-text-bold" href="https://getuikit.com/"><span
+                    uk-icon="icon: uikit; ratio:1"></span></a> | source
+            code:
+            <a class="uk-link-text uk-link-muted" href="https://github.com/rubiocode/rubiocode.v3.portfolio"><i
+                    class="fab fa-github"></i></a> | Got
+            questions? Click the envelope to send me an email:
+            <a class="uk-link-text uk-link-muted" href="mailto:w.rubidia.rubio@gmail.com"><i
+                    class="far fa-envelope"></i></a>
+        </p>
+    </footer>
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+    <!--JS-->
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

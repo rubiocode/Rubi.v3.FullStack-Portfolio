@@ -1,0 +1,311 @@
+/*General HTML elements styling*/
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+h2{
+    font-weight: 800;
+}
+
+/*navbar styling*/
+.uk-navbar-nav{
+    z-index: 999;
+}
+
+.uk-nav-item{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*Parallax background images and text*/
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*
+    fixed= parallax
+    scroll= normal
+    */
+    background-attachment: fixed;
+    z-index:1;
+}
+
+.pimg1{
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/colorado-flags-on-larimer-square-denver-teri-virbickis.jpg');
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url('https://images.pexels.com/photos/2347011/pexels-photo-2347011.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-2347011.jpg&fm=jpg');
+    min-height: 400px;
+
+}
+.pimg3{
+    background-image: url('https://user-images.githubusercontent.com/78938193/130538874-63d04480-6781-4612-b6d4-a824b01a2256.jpg');
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: white;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    color: rgb(240, 227, 227);
+    padding: 20px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.ptext .trans{
+    background-color: transparent;
+    font-weight: 800;
+}
+
+/*cursor effect main page*/
+.txt-type>.txt {
+    border-right: 0.2rem solid rgb(5, 5, 5);
+    font-weight: 800;
+}
+
+
+/*About me section*/
+.aboutmetext{
+    text-align: left;
+    padding-top: 15rem;
+}
+
+#imgs{
+    display:none;
+}
+
+.img{
+    width: 50%;
+    height: 20%;
+}
+
+
+/*Projects section*/
+.uk-overlay{
+    visibility: hidden;
+}
+
+.uk-card:hover .uk-overlay{
+    visibility: visible;
+}
+
+.uk-card:hover{
+    width: 125%;
+    z-index: 999;
+}
+
+#proText{
+    color:rgb(240, 227, 227);
+}
+
+/*Contact Me styling*/
+.icon{
+    color: rgb(22, 22, 22);
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    
+}
+
+.contact .content h1{
+    font-size:40px;
+    font-weight: 800;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left:  20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 800;
+    color: rgb(65, 63, 63);
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative; 
+    width:100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}  
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/*Media queries for different screen sizes*/
+@media only screen and (max-width:600px){
+    div .img{
+        display: none;
+    }
+    #imgs{
+        display: block;
+    }
+    div .aboutmetext{
+        padding-top:0;
+    }
+
+}
+
+@media (max-width:568px){
+    .contact{
+        padding:50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%; 
+    }
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+    .item{
+        display: none;
+    }
+    .contacttext{
+        display: none;
+    }
+}
