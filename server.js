@@ -29,7 +29,7 @@ app.post('/', (req,res) => {
 
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'yahoo',
         auth: {
             user: process.env.DB_EMAIL,
             pass: process.env.DB_PASS, 
