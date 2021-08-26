@@ -22,7 +22,7 @@ Portfolio.v02: https://rubiocode.github.io/rubiocode-pf/
 * [Description](#description)
 * [View](#view)
 * [Usage](#usage)
-* [Project Status](#project-status)
+* [Future Improvements](#future-improvements)
 * [Built With](#built-with)
 * [Credits](#credits)
 * [License](#license)
@@ -89,8 +89,8 @@ for developing fast and powerful web interfaces.
 
 ## Credits
 
-Favicon from [favicon.io](https://favicon.io/). 
-Parallax video [parallax](https://www.youtube.com/watch?v=JttTcnidSdQ)
+* Favicon from [favicon.io](https://favicon.io/). 
+* Parallax video [parallax](https://www.youtube.com/watch?v=JttTcnidSdQ)
 
 ## License
 
