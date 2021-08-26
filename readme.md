@@ -4,7 +4,7 @@
  
 Built with HTML, CSS, JavaScript, and UIKit.
 
-Deployed Website: https://rubiocode.github.io/rubiocode.v3.portfolio/
+Deployed Website: https://stark-bastion-88221.herokuapp.com/
 
 GitHub Repository: https://github.com/rubiocode/rubiocode.v3.portfolio
 
@@ -61,16 +61,18 @@ This [video](https://drive.google.com/file/d/1ZMlQF_JUiyQRWKbklwhDOD0KMU-lwaia/v
 
 
 
-<a name="project-status"></a>
 
-## Project Status 
 
-* The Portfolio page will be updated regularly to include new projects.
-* The About Me page may be updated to add more information in the future.
-* Learning canvas html to add to About Me page.
-* Contact Me message will be updated to become responsive to user input
+## Future Improvements
 
-<a name="built-with"></a>
+Future improvements to this portfolio:
+
+In my v3 portfolio I tried having a functional Contact me form. The form works fine with my local computer unfortunately once deployed to Heroku the form no longer works. After doing some investigating it seems I will need some sort of Captcha challenge for the message to be able to go through the email security settings. 
+
+Another improvement would be trying to have a page that loads smoothly once rendered. At the moment, it takes a few seconds for the images to load. 
+
+In the future I would also like to implement lazy loading to the portfolio. 
+
 
 ## Built With
 
@@ -79,7 +81,11 @@ This [video](https://drive.google.com/file/d/1ZMlQF_JUiyQRWKbklwhDOD0KMU-lwaia/v
 * [UIkit](https://getuikit.com/) - A lightweight and modular front-end framework
 for developing fast and powerful web interfaces.
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language that creates dynamic website content. Used in this project to filter projects and add typewriter effect to homepage.
-* [FontAwesome](https://fontawesome.com/) - Library for icons and fonts. Used in this project for the icons on the footer and carousel.
+* [FontAwesome](https://fontawesome.com/) - Library for icons and fonts.
+* [Express](https://expressjs.com/) - A Node.js web application server framework used to build web applications.
+* [Node.js](https://nodejs.dev/learn/) - Node.js is an open-source, low-level, back-end JavaScript runtime platform that uses asynchronous programming and is a popular tool for almost any kind of project!.
+* [dotenv package](https://nodejs.dev/learn/) - A package to store enviromental variables.
+* [Nodemailer](https://nodemailer.com/about/) - Nodemailer is a module for Node.js application to allow easy email sending. 
 
 ## Credits
 
