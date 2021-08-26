@@ -45,7 +45,7 @@ I used UIKit CSS Framework to create a mobile responsive portfolio with the foll
 <a name="view"></a>
 ## View
 
-To view my latest portfolio click [here](https://rubiocode.github.io/rubiocode.v3.portfolio/), which will lead you to the homepage.
+To view my latest portfolio click [here](https://stark-bastion-88221.herokuapp.com/), which will lead you to the homepage.
 
 
 <a name="usage"></a>
